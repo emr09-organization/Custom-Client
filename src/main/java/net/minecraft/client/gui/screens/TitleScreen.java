@@ -180,7 +180,7 @@ public class TitleScreen extends Screen {
                     .tooltip(tooltip)
                     .build()
             )
-            .active = flag;
+            .active = false;
         return p_96764_;
     }
 
@@ -292,7 +292,7 @@ public class TitleScreen extends Screen {
         }
 
         if (Minecraft.checkModStatus().shouldReportAsModified()) {
-            s = s + I18n.get("menu.modded");
+            s = s + I18n.get("");
         }
 
         p_282860_.drawString(this.font, s, 2, this.height - 10, ARGB.white(f));
